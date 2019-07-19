@@ -1,11 +1,10 @@
-import React, { useContext, useEffect } from "react";
-import { notification } from "antd";
-import { css } from "emotion";
+import React, { useEffect } from "react";
+// import { notification } from "antd";
 
 const openNotificationWithIcon = type => {
-    notification[type]({
-        message: "Ant Design is working"
-    });
+    // notification[type]({
+    //     message: "Ant Design is working"
+    // });
 };
 
 interface IProps {
@@ -19,12 +18,10 @@ export const Page: React.FC<IProps> = () => {
     }, [])
 
     return (
-        <div className={css(`padding: 12rem`)}>
-            <div className={"bg-blue-600 text-white p-4 mt-4"}>
-                <p>
-                    Hello world.
-                </p>
-            </div>
-        </div >
+        <>
+            <p>
+                Hello world.
+            </p>
+        </>
     );
 }
